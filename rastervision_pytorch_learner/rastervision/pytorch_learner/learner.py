@@ -260,7 +260,7 @@ class Learner(ABC):
             config_path = join(model_bundle_dir, 'pipeline-config.json')
 
             config_dict = file_to_json(config_path)
-            config_dict = upgrade_config(config_dict)
+            #config_dict = upgrade_config(config_dict)
 
             learner_pipeline_cfg: 'LearnerPipelineConfig' = build_config(
                 config_dict)
